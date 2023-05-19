@@ -2,13 +2,45 @@
 # MINASWAN
 
 # --------------------1) Create a method that takes in an array of words and a single letter and returns an array of all the words containing that particular letter. Use the test variables provided.
-
 beverages_array = ['coffee', 'tea', 'juice', 'water', 'soda water']
-
 filter_letter_o = 'o'
 # Expected output: ['coffee', 'soda water']
 filter_letter_t = 't'
 # Expected output: ['tea', 'water', 'soda water']
+
+result = beverages_array.select { |string| string.include?(filter_letter_o) }
+p result
+
+# b = Array.new 
+# b = beverages_array.includes? (`o + t`).collect
+# p b
+
+# def noWords (array1, array2)
+#      array2 = array1.map{[i]}.includes?{ |a| (/'o'/)}
+#      if 
+#      return array2 - array1
+#     end
+# end
+
+# p noWords(beverages_array, array2);
+# p part_array(beverages_array)
+# def array_of_words array
+#     one_arr = array.map { |a| a.include(/oOtT/) }
+#     if one_arr != beverages_array
+#     p array_of_words([beverages_array - one_arr])
+#     end
+# end
+
+# def array_of_words beverages_array
+#     if beverages_array.size =~ /[oOtT]/
+#         p 
+#     end    
+# end
+# p array_of_words('beverages_array')
+
+
+
+
 
 
 # -------------------2) Create a method that takes in a hash and returns one array with all the hash values at their own index and in alphabetical order. No nested arrays. Use the test variable provided.

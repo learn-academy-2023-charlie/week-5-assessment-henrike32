@@ -8,13 +8,13 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. What does calling super do in a Ruby class?
 
-Your answer:
+Your answer: It calls the current method in a superclass, it takes in params from the parent component and adds to the child component.
 
 Researched answer:
 
 2. What is a gem?
 
-Your answer:
+Your answer: 
 
 Researched answer:
 
