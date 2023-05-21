@@ -5,50 +5,28 @@
 beverages_array = ['coffee', 'tea', 'juice', 'water', 'soda water']
 filter_letter_o = 'o'
 # Expected output: ['coffee', 'soda water']
-filter_letter_t = 't'
+# filter_letter_t = 't'
 # Expected output: ['tea', 'water', 'soda water']
 
-result = beverages_array.select { |string| string.include?(filter_letter_o) }
-p result
+# result1 = beverages_array.select! { |string| string.include?(filter_letter_o) }
+# result2 = beverages_array.select! { |string| string.include?(filter_letter_t) }
 
-# b = Array.new 
-# b = beverages_array.includes? (`o + t`).collect
-# p b
-
-# def noWords (array1, array2)
-#      array2 = array1.map{[i]}.includes?{ |a| (/'o'/)}
-#      if 
-#      return array2 - array1
-#     end
-# end
-
-# p noWords(beverages_array, array2);
-# p part_array(beverages_array)
-# def array_of_words array
-#     one_arr = array.map { |a| a.include(/oOtT/) }
-#     if one_arr != beverages_array
-#     p array_of_words([beverages_array - one_arr])
-#     end
-# end
-
-# def array_of_words beverages_array
-#     if beverages_array.size =~ /[oOtT]/
-#         p 
-#     end    
-# end
-# p array_of_words('beverages_array')
-
-
-
-
-
-
+# Second approach, hard coded >>
+# result3 = "coffee" + "tea".gsub("tea", " ") +  " , " + "juice".gsub("juice", " ") + "water".gsub("water", " ")+ "soda water"
+# result4 = "coffee".gsub("coffee", " ") + "  tea" + " , "  + "juice".gsub("juice", " ") + "water" + " , "+ "soda water"
+# p result3,result4
 # -------------------2) Create a method that takes in a hash and returns one array with all the hash values at their own index and in alphabetical order. No nested arrays. Use the test variable provided.
-# HINT: Google 'ruby get rid of nested arrays'
+# HINT: Google 'ruby get rid of nested arrays'  
 
-us_states = { northwest: ['Washington', 'Oregon', 'Idaho'], southwest: ['California', 'Arizona', 'Nevada'], notheast: ['Maine', 'New Hampshire', 'Rhode Island'] }
+# result_array = us_states.values.to_a.flatten.sort    
+# gives me an output of => ["Arizona", "California", "Idaho", "Maine", "Nevada", "New Hampshire", "Oregon", "Rhode Island", "Washington"] 
+
+def extract_val(hash)
+    values = hash.values.flatten.sort
+end
+us_states = { northwest: ['Washington', 'Oregon', 'Idaho'], southwest: ['California', 'Arizona', 'Nevada'], northeast: ['Maine', 'New Hampshire', 'Rhode Island'] }
 # Expected output: ['Arizona', 'California', 'Idaho', 'Maine', 'Nevada', 'New Hampshire', 'Oregon', 'Rhode Island', 'Washington'] 
-
+result = extract_val(us_states)
 
 # --------------------3a) Create a class called Bike that is initialized with a model, wheels, and current_speed. The default number of wheels is 2. The current_speed should start at 0. Create a bike_info method that returns a sentence with all the data from the bike object.
 
