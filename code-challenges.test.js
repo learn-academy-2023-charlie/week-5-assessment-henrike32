@@ -49,6 +49,8 @@ const gotString = (string) => {
       i: '1',
       o: '0',
     };
+    // finished this code using gpt , I came up to the '/[aeEio]/g ' part, didn't knew what to do to actually replace for the values I wanted, It was only replacing the 'a'
+    // with 4 .
     return string.replace(/[aEeio]/g, (match) => codeMap[match])
 }
 console.log(gotString(secretCodeWord1))
@@ -117,20 +119,28 @@ let newArray = [];
 };
 
 // --------------------3) Create a function that takes in an array of 5 numbers and determines whether or not the array is a "full house". A full house is exactly one pair and one three of a kind.
-// pseudocode ->
-// input ->
-// output ->
-// process ->
 
 // a) Create a test with expect statements using the variable provided.
-
-// const hand1 = [5, 5, 5, 3, 3]
-// // Expected output: true
-// const hand2 = [5, 5, 3, 3, 4]
-// // Expected output: false
-// const hand3 = [5, 5, 5, 5, 4]
-// // Expected output: false
-// const hand4 = [7, 2, 7, 2, 7]
-// // Expected output: true
+describe ('fullHouse', () => {
+    it("determine if an array has a full house", () => {
+        const hand1 = [5, 5, 5, 3, 3]
+        // // Expected output: true
+        const hand2 = [5, 5, 3, 3, 4]
+        // // Expected output: false
+        const hand3 = [5, 5, 5, 5, 4]
+        // // Expected output: false
+        const hand4 = [7, 2, 7, 2, 7]
+        // // Expected output: true
+        expect(this(hand1).toEqual(true))
+        expect(this(hand2).toEqual(false))
+        expect(this(hand3).toEqual(false))
+        expect(this(hand4).toEqual(true))
+    })
+})
 
 // b) Create the function that makes the test pass.
+// I had connection problems this morning, my internet came back 1 min before classes, I was going to work on finishing the assessment this morning.
+// pseudocode -
+// input ->
+// output ->
+// process -

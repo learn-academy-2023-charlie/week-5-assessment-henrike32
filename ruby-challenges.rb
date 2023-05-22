@@ -7,6 +7,7 @@
 # Expected output: ['coffee', 'soda water']
 # filter_letter_t = 't'
 # Expected output: ['tea', 'water', 'soda water']
+# I googled  a method to filter an array and discovered the .select method, I used the .select method and the .include method to get the stringsI wanted inside the 'beverages_array'
 
 # result1 = beverages_array.select! { |string| string.include?(filter_letter_o) }
 # result2 = beverages_array.select! { |string| string.include?(filter_letter_t) }
