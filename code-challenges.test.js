@@ -34,7 +34,7 @@ describe("gotString", () => {
 // input -> returns a string with a coded message which converts "a" to 4, "e" to 3, "i" to 1, and "o" to 0.
 // process -
 // create a function named 'gotString'
-// using the .replaceAll method we can replace the given letters/integers in the original string ->  str1.replace(regexp, str2)
+// using the .replace method we can replace the given letters/integers in the original string ->  str1.replace(regexp, str2)
 // the callback function (match) => codeMap[match] is used to change each matched letter to its corresponding code from the codeMap object
 // Method 1: 
 const secretCodeWord1 = "Lackadaisical"
