@@ -30,7 +30,7 @@ referencing data in more tables as long as the data conforms to the predefined r
 Your answer: They are the main keys for the database, the Id for example, that will be unique for each component added to this table.
 
 Researched answer: Adding to my answer, the primary key is the column or columns that contain values that uniquely identify each row in a table,
-it will be used to insert,update,restore, or delete data from a database table.
+it will be used to insert,update,restore, or delete data from a database table. 
 
 5. What are the five HTTP verbs? What is each verb's corresponding CRUD action?
 
@@ -49,9 +49,9 @@ Research and define the following terms to the best of your ability.
 
 1. Model validations: It is the set of processes and activities intended to verify that models are performing as expected.
 
-2. RESTful routes: RESTful routes are an attempt to bring the operations that can be applied to an object into HTTP requests.
+2. RESTful routes: Representational state transfer, rules for designing network application. RESTful routes are an attempt to bring the operations (Post,Get,Put,Patch,Delete) that can be applied to an object into HTTP requests.
 
-3. ERB: Provides an easy to use but powerful templating system for Ruby. Using ERB, actual Ruby code can be added to any plain text document for the purposes of generating document information details and/or flow control.
+3. ERB: Embedded Ruby, provides an easy to use but powerful templating system for Ruby. Using ERB, actual Ruby code can be added to any plain text document for the purposes of generating document information details and/or flow control.
 
 4. Params: In Rails, the URL parameters are stored in the default object "params". Params refers to the parameters being passed to the controller via a GET or POST request.
 
